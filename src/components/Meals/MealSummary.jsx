@@ -8,7 +8,7 @@ const MealSummary = () => {
         Discover a unique blend of global cuisines at Modern Fusion Lounge,
         where innovation meets tradition. Our menu offers an eclectic mix of
         flavors, combining elements of Asian, Mediterranean, and Latin American
-        culinary traditions.{" "}
+        culinary traditions.
       </p>
       <p>
         Enjoy small plates perfect for sharing, alongside signature cocktails
