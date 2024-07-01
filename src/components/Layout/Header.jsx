@@ -1,19 +1,22 @@
 import React from "react";
 import { Fragment } from "react";
 import classes from "./Header.module.css";
+import HeaderCartButton from "./HeaderCart";
+import MealSummary from "../Meals/MealSummary";
 
 const Header = (props) => {
   return (
     <Fragment>
       <header className={classes.header}>
         <h1>React Meals</h1>
-        <button>Cart</button>
+        <HeaderCartButton />
       </header>
       <div className={classes["main-img"]}>
         <img
-          src="https://static.vecteezy.com/system/resources/previews/024/400/264/non_2x/table-scene-with-a-selection-of-delicious-foods-top-view-over-a-dark-wood-banner-background-generate-ai-free-photo.jpg"
+          src="https://github.com/academind/react-complete-guide-code/blob/11-practice-food-order-app/extra-files/meals.jpg?raw=true"
           alt="Table of food"
         />
+        <MealSummary />
       </div>
     </Fragment>
   );
