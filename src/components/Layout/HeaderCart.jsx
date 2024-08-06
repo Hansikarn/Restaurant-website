@@ -9,14 +9,12 @@ const HeaderCartButton = (props) => {
   const numberOfCartItems = cartCtx.items.reduce((curNumber, item) => {
     return curNumber + item.amount;
   }, 0);
+
   return (
     <button className={classes.button} onClick={props.onClick}>
-      <img
-        className={classes.icon}
-        src="https://static.vecteezy.com/system/resources/thumbnails/004/798/846/small/shopping-cart-logo-or-icon-design-vector.jpg"
-        alt="Cart"
-      />
-
+      <span className={classes.icon}>
+        <CartIcon />
+      </span>
       <span>Your Cart</span>
       <span className={classes.badge}>{numberOfCartItems}</span>
     </button>
